@@ -6,7 +6,7 @@ This is the official code of [Learn More and Learn Usefully: Truncation Compensa
 Recent methods for semantic segmentation of high-resolution remote sensing images incorporate a downsized global image as an auxiliary input to alleviate the loss of global context caused by cropping operations. Nonetheless, these methods still face two key challenges: one is the detailed features are weakened when resizing the global auxiliary image through down-sampling; and the other one is the noise brought by the global auxiliary image, which reduces the network’s discriminability of useful and useless information. To tackle these challenges, we propose a Truncation Compensation network (TCNet) for semantic segmentation of high-resolution remote sensing images. Compared with previous methods, we compensate the truncated features in the local image while minimize noise interference to accentuate the learning of useful information. we also design a related category semantic enhancement module to alleviate the information loss caused by downsampling and a global-local contextual cross-fusion module to enrich local image semantic segmentation with long-distance contextual information.
 
 <video width="320" height="240" controls>
-  <source src="[video.mp4](https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/video/FCN.mp4)" type="video/mp4">
+  <source src="https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/video/FCN.mp4" type="video/mp4">
   <img src="video.jpg">
 </video>
 
