@@ -1,7 +1,8 @@
 # TCNet
 Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images
-# Password
-The password is the ID of this paper.
+
+# Introduction
+This is the official code of [Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images](https://github.com/LiZhangwhu/TCNet/tree/main/TCNet)
 # Installation
 `conda env create -f tcn.ymal`
 # Data
