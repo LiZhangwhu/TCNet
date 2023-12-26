@@ -2,7 +2,10 @@
 Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images
 
 # Introduction
-This is the official code of [Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images](https://github.com/LiZhangwhu/TCNet/tree/main/TCNet)
+This is the official code of [Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images](https://github.com/LiZhangwhu/TCNet/tree/main/TCNet). 
+Recent methods for semantic segmentation of high-resolution remote sensing images incorporate a downsized global image as an auxiliary input to alleviate the loss of global context caused by cropping operations. Nonetheless, these methods still face two key challenges: one is the detailed features are weakened when resizing the global auxiliary image through down-sampling; and the other one is the noise brought by the global auxiliary image, which reduces the network’s discriminability of useful and useless information. To tackle these challenges, we propose a Truncation Compensation network (TCNet) for semantic segmentation of high-resolution remote sensing images. Compared with previous methods, we compensate the truncated features in the local image while minimize noise interference to accentuate the learning of useful information. we also design a related category semantic enhancement module to alleviate the information loss caused by downsampling and a global-local contextual cross-fusion module to enrich local image semantic segmentation with long-distance contextual information.
+[FCN](https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/video/FCN.mp4)
+ 
 # Installation
 `conda env create -f tcn.ymal`
 # Data
