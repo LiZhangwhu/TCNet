@@ -22,9 +22,11 @@ https://private-user-images.githubusercontent.com/109151568/292879027-e4f45834-b
 # Quick start
 ## Download
 Clone this repo to local
+
 `git clone https://github.com/LiZhangwhu/TCNet.git`
 ## Installation
 Run the following command to quickly configure the required environment.
+
 `conda env create -f tcn.ymal`
 ## Data
 Download the data via the link below.  
