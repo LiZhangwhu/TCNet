@@ -15,8 +15,10 @@ To tackle these challenges, we propose a Truncation Compensation network (TCNet)
 Besides, we also design a related category semantic enhancement module (RSEM) to alleviate the information loss caused by downsampling and a global-local contextual cross-fusion module (CFM) to enrich local image semantic segmentation with long-distance contextual information. We illustrate the overall framework of TCNet in the Figure. 
  ![fig2](https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/pic/fig2.png)
 
-Comprehensive experiments conducted on the ISPRS, BLU, and GID datasets demonstrate the superior performance of our proposed method compared to alternative approaches.
- 
+Comprehensive experiments conducted on the ISPRS, BLU, and GID datasets demonstrate the superior performance of our proposed method compared to alternative approaches. We present some segmentation results of our method in TCNet.mp4.
+
+https://private-user-images.githubusercontent.com/109151568/292879027-e4f45834-bffc-41af-92cd-f5527ab7c85a.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDM2NDM5MDQsIm5iZiI6MTcwMzY0MzYwNCwicGF0aCI6Ii8xMDkxNTE1NjgvMjkyODc5MDI3LWU0ZjQ1ODM0LWJmZmMtNDFhZi05MmNkLWY1NTI3YWI3Yzg1YS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIyN1QwMjIwMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjg3MDhhYjdlMzk4ODliOGQxODZiNGZhNjFmMGU4YjZlOGM3MWE4MTY5YjczNmUyNGZmNmY3OTkzOTAxNWQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.mMgMWetpUCJ-FdyEOaV8lxk5edZbyTjDBS03H3_rig4
+
 # Installation
 `conda env create -f tcn.ymal`
 # Data
@@ -24,6 +26,37 @@ All the data formats are unchanged, and the file structure of the data is shown 
 BLU: `https://rslab.disi.unitn.it/dataset/BLU/`  
 GID: `https://x-ytong.github.io/project/GID.html`  
 Potsdam: `https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx`
+
+Your directory tree should be look like this:
+```
+$SEG_ROOT/data
+├── BLU
+│   ├── train
+│   │   ├── image
+│   │   └── label
+│   ├── val
+│   │   ├── image
+│   │   └── label
+│   └── test
+│   │   ├── image
+│   │   └── label
+├── GID
+│   ├── train
+│   │   ├── image
+│   │   └── label
+│   ├── val
+│   │   ├── image
+│   │   └── label
+│   └── test
+│   │   ├── image
+│   │   └── label
+├── Potsdam
+│   ├── train
+│   ├── test
+│   ├── val
+│   ├── dsm
+│   └── Labels_noBoundary
+```
 # How to train
 You just need to change your data path in `Train.py` to start training the model.  
 At present, you can run the BLU data set directly, if you want to run the GID dataset or Potsdam dataset, please uncomment the code that load the GID or Potsdam data in `Train.py`.
