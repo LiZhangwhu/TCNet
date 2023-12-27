@@ -17,7 +17,7 @@ Besides, we also design a related category semantic enhancement module (RSEM) to
 
 Comprehensive experiments conducted on the ISPRS, BLU, and GID datasets demonstrate the superior performance of our proposed method compared to alternative approaches. We present some segmentation results of our method in TCNet.mp4.
 
-https://private-user-images.githubusercontent.com/109151568/292879027-e4f45834-bffc-41af-92cd-f5527ab7c85a.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDM2NDM5MDQsIm5iZiI6MTcwMzY0MzYwNCwicGF0aCI6Ii8xMDkxNTE1NjgvMjkyODc5MDI3LWU0ZjQ1ODM0LWJmZmMtNDFhZi05MmNkLWY1NTI3YWI3Yzg1YS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIyN1QwMjIwMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjg3MDhhYjdlMzk4ODliOGQxODZiNGZhNjFmMGU4YjZlOGM3MWE4MTY5YjczNmUyNGZmNmY3OTkzOTAxNWQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.mMgMWetpUCJ-FdyEOaV8lxk5edZbyTjDBS03H3_rig4
+https://private-user-images.githubusercontent.com/109151568/292954264-2f0e5c5b-adbc-4f1f-875a-94b343cf64fd.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDM2NTAwMTMsIm5iZiI6MTcwMzY0OTcxMywicGF0aCI6Ii8xMDkxNTE1NjgvMjkyOTU0MjY0LTJmMGU1YzViLWFkYmMtNGYxZi04NzVhLTk0YjM0M2NmNjRmZC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIyN1QwNDAxNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YWU5OTM5MDhjNzJlNDFmNDYyNTFmYWY3YzBjYTcyZDI5ZmU4YzNhMmQ1YTkxZWYyOWVkYTg4ZjJkNWMzNmIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OhZMbHyvyV0fGKMSCAjiCMiJg1-06ScwG0xe78gt_-E
 
 # Quick start
 ## Download
@@ -83,7 +83,7 @@ Please cite the following paper, if you use this code.
  @article{Zhang2023learn,  
   title={Learn More and Learn Usefully: Truncation Compensation Network for Semantic Segmentation of High-Resolution Remote Sensing Images},  
   author={Li Zhang, Zhenshan Tan, Guo Zhang, Wen Zhang, Zhijiang Li},  
-  journal={IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING}  
+  journal={}  
   year={2023}  
 }
 ```
