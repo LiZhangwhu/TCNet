@@ -10,7 +10,9 @@ https://private-user-images.githubusercontent.com/109151568/292878979-8df3ca8f-4
 
 To tackle these challenges, we propose a Truncation Compensation network (TCNet) for semantic segmentation of high-resolution remote sensing images. Compared with previous methods, we compensate the truncated features in the local image while minimize noise interference to accentuate the learning of useful information (GUAI, as shown in the figure below). Upon comparison of the second and third rows, our approch noticeably diminishes the adverse effects stemming from irrelevant information. Intuitively, the removal of interference information substantially enhances the network's ability to discriminate between useful and useless information within GAI.
 
-![fig1](https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/pic/fig1.png)
+<p align="center">
+  <img src="https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/pic/fig1.png" hspace="20"/>
+</p>
 
 Besides, we also design a related category semantic enhancement module (RSEM) to alleviate the information loss caused by downsampling and a global-local contextual cross-fusion module (CFM) to enrich local image semantic segmentation with long-distance contextual information. We illustrate the overall framework of TCNet in the Figure. 
  ![fig2](https://github.com/LiZhangwhu/TCNet/blob/main/TCNet/pic/fig2.png)
