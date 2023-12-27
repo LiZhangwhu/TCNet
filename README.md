@@ -20,10 +20,14 @@ Comprehensive experiments conducted on the ISPRS, BLU, and GID datasets demonstr
 https://private-user-images.githubusercontent.com/109151568/292879027-e4f45834-bffc-41af-92cd-f5527ab7c85a.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDM2NDM5MDQsIm5iZiI6MTcwMzY0MzYwNCwicGF0aCI6Ii8xMDkxNTE1NjgvMjkyODc5MDI3LWU0ZjQ1ODM0LWJmZmMtNDFhZi05MmNkLWY1NTI3YWI3Yzg1YS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIyN1QwMjIwMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjg3MDhhYjdlMzk4ODliOGQxODZiNGZhNjFmMGU4YjZlOGM3MWE4MTY5YjczNmUyNGZmNmY3OTkzOTAxNWQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.mMgMWetpUCJ-FdyEOaV8lxk5edZbyTjDBS03H3_rig4
 
 # Quick start
+## Download
+Clone this repo to local
+`git clone https://github.com/LiZhangwhu/TCNet.git`
 ## Installation
+Run the following command to quickly configure the required environment.
 `conda env create -f tcn.ymal`
-# Data
-All the data formats are unchanged, and the file structure of the data is shown in folder `Data`.  
+## Data
+Download the data via the link below.  
 BLU: `https://rslab.disi.unitn.it/dataset/BLU/`  
 GID: `https://x-ytong.github.io/project/GID.html`  
 Potsdam: `https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx`
@@ -58,11 +62,19 @@ $SEG_ROOT/data
 │   ├── dsm
 │   └── Labels_noBoundary
 ```
-# How to train
+## How to train
 You just need to change your data path in `Train.py` to start training the model.  
+```
+conda activate tcn
+python Train.py
+```
 At present, you can run the BLU data set directly, if you want to run the GID dataset or Potsdam dataset, please uncomment the code that load the GID or Potsdam data in `Train.py`.
-# How to evaluate
+## How to evaluate
 You just need to change your data path and your checkpoints path in `Eval.py` to start training the model.
+```
+conda activate tcn
+python Eval.py
+```
 # Citation
 Please cite the following paper, if you use this code.  
 ```
@@ -74,7 +86,7 @@ Please cite the following paper, if you use this code.
 }
 ```
 # Reference
-Our paper is following the work "Looking Outside the Window: Wide-Context Transformer for the Semantic Segmentation of High-Resolution Remote Sensing Images".
+Our code is following the work "Looking Outside the Window: Wide-Context Transformer for the Semantic Segmentation of High-Resolution Remote Sensing Images".
 ```
 @ARTICLE{ding2106looking,
   author={Ding, Lei and Lin, Dong and Lin, Shaofu and Zhang, Jing and Cui, Xiaojie and Wang, Yuebin and Tang, Hao and Bruzzone, Lorenzo},
@@ -85,4 +97,23 @@ Our paper is following the work "Looking Outside the Window: Wide-Context Transf
   number={},
   pages={1-13},
   doi={10.1109/TGRS.2022.3168697}}
+@article{chen2019collaborative,
+  author={Chen, Wuyang and Jiang, Ziyu and Wang, Zhangyang and Cui, Kexin and Qian, Xiaoning},
+  booktitle={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Collaborative Global-Local Networks for Memory-Efficient Segmentation of Ultra-High Resolution Images}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={8916-8925},
+  doi={10.1109/CVPR.2019.00913}}
+@article{ding2020semantic,
+  title={Semantic segmentation of large-size VHR remote sensing images using a two-stage multiscale training architecture},
+  author={Ding, Lei and Zhang, Jing and Bruzzone, Lorenzo},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={58},
+  number={8},
+  pages={5367--5376},
+  year={2020},
+  publisher={IEEE}
+}
 ```
